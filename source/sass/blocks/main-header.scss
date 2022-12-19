@@ -1,0 +1,46 @@
+
+.page{
+  height: 100%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+}
+.page__body{
+  width: 320px;
+  margin: 0 auto;
+
+}
+.logo{
+  display: block;
+  margin: 0 auto;
+}
+.main-nav__link{
+  display: block;
+  padding: 12px 5px 17px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  background-color: $primary-color;
+}
+.main-nav__link-text{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.tour-preview{
+  height: 389px;
+  background-image: url('../../img/back-mobile.jpg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tour-preview__image{
+  padding: 90px 19px 85px;
+}
+//Блок с причинами
+
