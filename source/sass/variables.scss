@@ -4,19 +4,22 @@
   font-style: normal;
   font-display: swap;
   src:
-  url("../fonts/ptsans.woff2"),
-  url("../fonts/ptsans.woff")
+    url("../fonts/ptsans.woff2"),
+    url("../fonts/ptsans.woff");
 }
+
 @font-face {
   font-family: "PT Sans";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
   src:
-  url("../fonts/ptsansbold.woff2"),
-  url("../fonts/ptsansbold.woff")
+    url("../fonts/ptsansbold.woff2"),
+    url("../fonts/ptsansbold.woff");
 }
+
 $primary-color: #81B3D2;
+
 .visually-hidden {
   position: absolute;
   width: 1px;

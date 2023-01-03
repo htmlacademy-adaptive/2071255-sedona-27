@@ -9,14 +9,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class=" logo" src="img/logo.png" width="185" alt="Логотип сервиса Седона">
     </a>
     <div class="main-nav">
       <button class="main-nav__toggle">
+        <svg class="toggle__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+        </svg>
         <span class="visually-hidden">Меню навигации</span>
       </button>
-      <nav class="main-nav__wrapper">
+      <nav class="main-nav__wrapper main-nav__wrapper--visually-hidden">
         <a class="main-nav__link main-nav__link-text" href="index.html">Главная</a>
         <a class="main-nav__link main-nav__link-text" href="photo.html">Фото и видео</a>
         <a class="main-nav__link main-nav__link-text" href="form.html">Форма отзыва</a>
@@ -100,14 +103,19 @@
       <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
         <span class="visually-hidden">Мы в Вконтакте</span>
       </a>
-      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+        <span class="visually-hidden">Мы в Телеграме</span>
+      </a>
+      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+        <span class="visually-hidden">Мы в Ютюбе</span>
+      </a>
     </div>
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img class="copyright__icon" src="img/icons/htmlacademy-icon.svg" width="27" height="34" alt="Логотип HTML-Академии" >
+        <img class="copyright__icon" src="img/icons/htmlacademy-icon.svg" width="27" height="34"
+          alt="Логотип HTML-Академии">
       </a>
     </div>
   </footer>

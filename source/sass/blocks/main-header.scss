@@ -1,22 +1,41 @@
-
-.page{
+.page {
   height: 100%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans';
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 
 }
-.page__body{
+
+.page__body {
   width: 320px;
   margin: 0 auto;
 
 }
-.logo{
-  display: block;
-  margin: 0 auto;
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.main-nav__link{
+.main-nav{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav__wrapper--visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-nav__link {
   display: block;
   padding: 12px 5px 17px;
   box-sizing: border-box;
@@ -24,8 +43,9 @@
   text-align: center;
   background-color: $primary-color;
 }
-.main-nav__link-text{
-  font-family: 'PT Sans', sans-serif;
+
+.main-nav__link-text {
+  font-family: 'PT Sans',;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -33,14 +53,22 @@
   color: #ffffff;
   text-transform: uppercase;
 }
-.tour-preview{
+
+.tour-preview {
   height: 389px;
   background-image: url('../../img/back-mobile.jpg.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
-.tour-preview__image{
+
+.tour-preview__image {
   padding: 90px 19px 85px;
 }
-
-
+.main-nav__toggle{
+  padding: 17px 21px;
+  border: none;
+  background-color: transparent;
+}
+.toggle__icon{
+  fill: #81B3D2;
+}
