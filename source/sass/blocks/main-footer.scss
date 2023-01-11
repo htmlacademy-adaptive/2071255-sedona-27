@@ -1,6 +1,14 @@
 .main-footer {
   padding: 29px 0 23px;
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 76px 36px 45px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 36px 136px 36px 104px;
+  }
 }
 
 .main-footer__hashtag {
@@ -13,16 +21,23 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social {
   display: flex;
   justify-content: center;
   gap: 6px;
+
 }
 
 .social {
   margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
