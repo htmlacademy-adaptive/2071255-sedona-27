@@ -1,6 +1,48 @@
-.reasons__text-wrapper {
-  padding: 0 18px;
+.main-container{
+  margin-top: -40px;
 }
+.tour-preview {
+  height: 389px;
+  width: 320px;
+  background-image: url('../../img/background-sedona.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .tour-preview{
+    height: 518px;
+    width: 768px;
+
+  }
+  .tour-preview__image{
+    width: 461px;
+    height: 350px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .tour-preview{
+    height: 518px;
+    width: 1200px;
+
+  }
+}
+.reasons__text-wrapper {
+  padding: 39px 20px 33px;
+  @media (min-width: $tablet-width){
+    padding: 48px 124px 55px;
+    max-width: 520px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 60px 358px 44px;
+    max-width: 484px;
+  }
+}
+
 
 .reasons__intro {
   font-size: 18px;
@@ -10,29 +52,53 @@
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .reasons__description {
   color: #333333;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
-
+.reasons__wrapper{
+  @media (min-width: $tablet-width){
+    display: flex;
+  }
+}
 .reasons__item {
   background-color: $primary-color;
   color: #ffffff;
-  padding: 33px 18px 40px;
   text-align: center;
+  @media (min-width: $tablet-width){
+    padding: 52px 33px 31px;
+    max-width: 256px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 52px 50px 51px;
+    max-width: 400px;
+  }
 }
 
-.infrastructure {
-  padding-top: 54px;
-}
 
 .infrastructure__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  @media (min-width: $tablet-width){
+    display: flex;
+  }
+}
+.infrastructure__item{
+  @media (min-width: $tablet-width){
+    padding: 60px 33px;
+    width: 256px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 69px 50px;
+    width: 400px;
+  }
 }
 
 .infrastructure__title {
@@ -40,6 +106,9 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  @media (min-width: $tablet-width){
+    text-align: center;
+  }
 }
 
 .infrastructure__description {
@@ -48,8 +117,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
+  @media (min-width: $tablet-width){
+    text-align: center;
+  }
 }
-
 .reasons__item-title {
   font-size: 18px;
   line-height: 26px;
@@ -70,6 +141,24 @@
   margin: 0;
   text-transform: uppercase;
 }
+.reasons__item-image{
+  @media (min-width: $tablet-width){
+    width: 512px;
+  }
+  @media (min-width: $desktop-width){
+    width: 800px;
+  }
+}
+.reasons__item--text-second{
+  order: 2;
+}
+.reasons__wrapper_secondary{
+  display: block;
+  @media (min-width: $tablet-width){
+    display: flex;
+  }
+}
+
 
 .reasons__item--secondary {
   background-color: #eeeeee;
@@ -83,7 +172,14 @@
 /**Блок с предложениями**/
 .offer {
   padding: 38px 18px 49px;
+  @media (min-width: $tablet-width){
+    padding: 60px 155px 58px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 60px 371px 66px;
+  }
 }
+
 
 .offer__title {
   font-size: 18px;
@@ -94,6 +190,9 @@
   text-align: center;
   margin: 0;
   margin-bottom: 11px;
+  @media (min-width: $tablet-width){
+    max-width: 435px;
+  }
 }
 
 .offer__description {
@@ -102,6 +201,9 @@
   color: #333333;
   margin: 0;
   margin-bottom: 32px;
+  @media (min-width: $tablet-width){
+    max-width: 435px;
+  }
 }
 
 .button-primary {
@@ -115,4 +217,16 @@
   text-transform: uppercase;
   text-align: center;
   padding: 16px 0;
+  @media (min-width: $tablet-width){
+    max-width: 458px;
+  }
+}
+.map__image-map{
+  @media (min-width: $tablet-width){
+    width: 768px;
+    height: 350px;
+  }
+  @media (min-width: $desktop-width){
+    width: 1200px;
+  }
 }

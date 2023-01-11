@@ -17,8 +17,12 @@
     url("../fonts/ptsansbold.woff2"),
     url("../fonts/ptsansbold.woff");
 }
-
+/**Цвета основные**/
 $primary-color: #81B3D2;
+
+/**Ширина экрана**/
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 .visually-hidden {
   position: absolute;
