@@ -20,12 +20,14 @@
       </svg>
       <span class="visually-hidden">Меню навигации</span>
     </button>
-    <nav class="main-nav__wrapper main-nav__wrapper--visually-hidden">
+    <div class="main-nav__wrapper main-nav__wrapper--left">
       <a class="main-nav__link main-nav__link-text" href="index.html">Главная</a>
       <a class="main-nav__link main-nav__link-text" href="photo.html">Фото и видео</a>
+    </div>
+    <div class="main-nav__wrapper main-nav__wrapper--right">
       <a class="main-nav__link main-nav__link-text" href="form.html">Форма отзыва</a>
       <a class="main-nav__link main-nav__link-text" href="https://htmlacademy.ru/">HTML ACADEMY</a>
-    </nav>
+    </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
@@ -48,17 +50,26 @@
         <img class="reasons__item-image" src="img/photo-cafe.png" width="320" height="260" alt="Фото кафе в седоне">
       </div>
       <ul class="infrastructure__list">
-        <li class="infrastructure__item infrastructure__list--house">
+        <li class="infrastructure__item infrastructure__item--house">
+          <div class="infrastructure__content-wrapper">
+          <img class="infrastructure__image" src="img/icons/icon-house.svg">
           <h3 class="infrastructure__title">Жилье</h3>
           <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
         </li>
-        <li class="infrastructure__item infrastructure__list--food">
+        <li class="infrastructure__item infrastructure__item--food">
+          <div class="infrastructure__content-wrapper">
+          <img class="infrastructure__image" src="img/icons/icon-burger.svg">
           <h3 class="infrastructure__title">Еда</h3>
           <p class="infrastructure__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </div>
         </li>
-        <li class="infrastructure__item infrastructure__list--gift">
+        <li class="infrastructure__item infrastructure__item--gift">
+          <div class="infrastructure__content-wrapper">
+          <img class="infrastructure__image" src="img/icons/icon-gift.svg">
           <h3 class="infrastructure__title">Сувениры</h3>
           <p class="infrastructure__description">Не только китайского, но и местного производства!</p>
+        </div>
         </li>
       </ul>
       <div class="reasons__wrapper">
