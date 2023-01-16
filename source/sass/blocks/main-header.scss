@@ -39,7 +39,7 @@
   display: block;
   margin: 0 auto;
   @media (min-width: $tablet-width) and (max-width: $desktop-width){
-    margin-left: -16px;
+
   }
 
 }
@@ -67,17 +67,18 @@
 
 
 .main-nav__link {
-  padding: 12px 10px 17px;
+  padding: 18px 10px 17px;
   box-sizing: border-box;
   font-size: 18px;
   text-align: center;
   background-color: $primary-color;
+  height: 56px;
   @media (min-width: $tablet-width){
-    display: inline-block;
+    display: block;
     width: 153px;
   }
   @media (min-width: $desktop-width){
-    display: inline-block;
+    display: block;
     width: 240px;
   }
 }
@@ -98,11 +99,26 @@
   padding: 17px 21px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  width: 62px;
+  height: 56px;
+}
+.main-nav__toggle::before{
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 22px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+
+
+.main-nav__wrapper--active .main-nav__toggle{
 
 }
-.toggle__icon{
-  fill: #81B3D2;
-}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle{
     display: none;
@@ -117,6 +133,3 @@
     color: #000;
   }
 }
-
-
-

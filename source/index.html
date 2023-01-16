@@ -14,10 +14,6 @@
       <img class=" logo" src="img/logo.png" width="185" alt="Логотип сервиса Седона">
     </a>
     <button class="main-nav__toggle">
-      <svg class="toggle__icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
-      </svg>
       <span class="visually-hidden">Меню навигации</span>
     </button>
     <div class="main-nav__wrapper main-nav__wrapper--left">
@@ -52,21 +48,21 @@
       <ul class="infrastructure__list">
         <li class="infrastructure__item infrastructure__item--house">
           <div class="infrastructure__content-wrapper">
-          <img class="infrastructure__image" src="img/icons/icon-house.svg">
+          <img class="infrastructure__image infrastructure__image--house" src="img/icons/icon-house.svg" width="39" height="37">
           <h3 class="infrastructure__title">Жилье</h3>
           <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         </li>
         <li class="infrastructure__item infrastructure__item--food">
           <div class="infrastructure__content-wrapper">
-          <img class="infrastructure__image" src="img/icons/icon-burger.svg">
+          <img class="infrastructure__image infrastructure__image--burger" src="img/icons/icon-burger.svg" width="40" height="35">
           <h3 class="infrastructure__title">Еда</h3>
           <p class="infrastructure__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </div>
         </li>
         <li class="infrastructure__item infrastructure__item--gift">
           <div class="infrastructure__content-wrapper">
-          <img class="infrastructure__image" src="img/icons/icon-gift.svg">
+          <img class="infrastructure__image infrastructure__image--gift" src="img/icons/icon-gift.svg" width="32" height="38">
           <h3 class="infrastructure__title">Сувениры</h3>
           <p class="infrastructure__description">Не только китайского, но и местного производства!</p>
         </div>
@@ -111,7 +107,10 @@
     </div>
     <div class="map">
       <a class="map__link" href="#">
-        <img class="map__image-map" src="img/map.png" width="320" height="350" alt="Карта интерактивная">
+        <iframe class="map__image-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676291.6790741652!2d-111.03830464779833!3d34.85604677235313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673881264047!5m2!1sru!2sru"
+        width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
       </a>
     </div>
   </main>
