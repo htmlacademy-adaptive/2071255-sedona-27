@@ -4,7 +4,6 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-
 }
 
 .page__body {
@@ -19,10 +18,7 @@
 }
 .main-header{
   position: relative;
-  @media (min-width: $tablet-width){
-    display: flex;
-    justify-items: center;
-  }
+  min-height: 56px;
 }
 .main-header__logo{
   display: block;
@@ -38,19 +34,22 @@
 .logo{
   display: block;
   margin: 0 auto;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width){
-
+  @media (min-width: $tablet-width){
+    position: absolute;
+    top:0;
+    right: 50%;
+    transform: translateX(50%);
   }
 
 }
-.main-nav__wrapper{
-  display: none;
 
+.main-nav__wrapper--close .main-nav__wrapper{
+  display: none;
+  @media (min-width: $tablet-width){
+    display: flex;
+  }
 }
-.main-nav__wrapper--right{
-  order:3;
-}
-.main-nav__wrapper--active{
+.main-nav__wrapper--open{
   position: absolute;
   top:0;
   right: 0;
@@ -63,8 +62,16 @@
     display: block;
   }
 }
-
-
+.main-nav__wrapper{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width){
+    flex-direction: row;
+  }
+}
+.main-nav__wrapper--right{
+  order:3;
+}
 
 .main-nav__link {
   padding: 18px 10px 17px;
@@ -102,8 +109,9 @@
   cursor: pointer;
   width: 62px;
   height: 56px;
+  z-index: 2;
 }
-.main-nav__toggle::before{
+.main-nav__wrapper--close .main-nav__toggle::before{
   content: "";
   position: absolute;
   top: 17px;
@@ -114,22 +122,52 @@
   box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
+  .main-nav__wrapper--open .main-nav__toggle {
+    top: 0;
+    right: 0;
 
-.main-nav__wrapper--active .main-nav__toggle{
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      width: 22px;
+      height: 4px;
+      background-color: #ffffff;
+    }
 
-}
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+  }
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle{
     display: none;
   }
-  .main-nav__wrapper{
+  .main-nav__wrapper-list{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .main-nav__link{
     background-color: transparent;
   }
   .main-nav__link-text{
     color: #000;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
