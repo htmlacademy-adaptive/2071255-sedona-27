@@ -1,0 +1,33 @@
+.tour-preview {
+  height: 389px;
+  width: 320px;
+  background-image: url('../../img/background-sedona.jpg');
+  background-position: 50% -40px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(min-width: $tablet-width){
+    background-position: 50% 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .tour-preview{
+    height: 518px;
+    width: 768px;
+
+  }
+  .tour-preview__image{
+    width: 461px;
+    height: 350px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .tour-preview{
+    height: 518px;
+    width: 1200px;
+
+  }
+}
